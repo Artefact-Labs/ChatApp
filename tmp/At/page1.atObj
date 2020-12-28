@@ -1,0 +1,9 @@
+import ArtefactController from '$artefact-controller'
+
+Method startCam () { 
+	let at = new ArtefactController();
+	at.getMedia({video:true, audio:true}, (e) => {
+		console.log(e);
+		$('#videoCam-screen')[0].srcObject = e
+	});
+}

@@ -1,0 +1,46 @@
+
+Rectangle{ 
+ 
+ 
+  id: "NaN",
+  anchors.right: 0,
+  anchors.left: 0,
+  anchors.top: 0,
+  anchors.bottom: 0,
+  color: "black",
+  child: [
+    Video{
+     
+      id: "videoCam",
+      anchors.right: 0,
+      anchors.left: 0,
+      anchors.top: 0,
+      anchors.bottom: 0,
+      autoplay: true
+    },
+    Rectangle{
+     
+      id: "startCam",
+      width: 80,
+      height: 80,
+      radius: 40,
+      borderColor: "#fff",
+      border: 5,
+      color: "red",
+      anchors.horizontalCenter: 0,
+      anchors.bottom: 20,
+      child: [
+        MouseArea{
+         
+          id: "mouseareastartCam1",
+          anchors.right: 0,
+          anchors.left: 0,
+          anchors.top: 0,
+          anchors.bottom: 0,
+          onClicked: "<#startCam#>"
+        }
+      ]
+    }
+  ]
+}, 
+  
